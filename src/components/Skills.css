@@ -1,0 +1,38 @@
+.skills-section {
+    padding: 100px 0;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.skill-category h3 {
+    color: var(--lightest-slate);
+    border-bottom: 2px solid var(--light-navy);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.skill-category ul {
+    list-style: none;
+    columns: 2; /* Creates two columns for the list items */
+}
+
+.skill-category ul li {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.skill-category ul li::before {
+    content: "✓ ";
+    color: var(--green);
+}
+
+/* On smaller screens, use a single column for skills */
+@media (max-width: 480px) {
+    .skill-category ul {
+        columns: 1;
+    }
+}

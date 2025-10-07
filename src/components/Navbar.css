@@ -1,0 +1,75 @@
+.navbar {
+    background: rgba(10, 25, 47, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    transition: top 0.3s;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.navbar ul li {
+    margin-left: 2rem;
+    font-size: 0.9rem;
+    counter-increment: nav-item; /* This is for the numbers */
+}
+
+.navbar ul li a {
+    color: var(--green);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* Adds the '01.' '02.' numbers before each link */
+.navbar ul li a::before {
+    content: "0" counter(nav-item) ". ";
+    color: var(--green);
+    text-align: right;
+    margin-right: 5px;
+}
+
+.navbar ul li a:hover {
+    color: var(--white);
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .navbar ul {
+        justify-content: center;
+    }
+    .navbar ul li {
+        margin: 0 1rem;
+    }
+}
+
+.btn-nav {
+    color: var(--green);
+    background-color: transparent;
+    border: 1px solid var(--green);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-nav:hover {
+    background-color: rgba(100, 255, 218, 0.1);
+}
+
+/* We remove the number for the button */
+.btn-nav::before {
+    content: "" !important;
+    margin-right: 0 !important;
+}

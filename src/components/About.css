@@ -1,0 +1,45 @@
+.about-section {
+  padding: 100px 0;
+}
+
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.about-text {
+  flex: 3; /* Takes up 3/5 of the space */
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.about-image-wrapper {
+  flex: 2; /* Takes up 2/5 of the space */
+  max-width: 300px;
+  position: relative;
+}
+
+.about-image {
+  width: 100%;
+  border-radius: 4px;
+  filter: grayscale(100%) contrast(1);
+  transition: all 0.3s ease;
+}
+
+.about-image:hover {
+  filter: grayscale(0%) contrast(1);
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-image-wrapper {
+    margin-top: 50px;
+  }
+}

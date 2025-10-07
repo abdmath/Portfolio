@@ -1,0 +1,16 @@
+.contact-section {
+    padding: 100px 0;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto; /* Center the section content */
+}
+
+.contact-section p {
+    margin: 1rem 0 2rem;
+    font-size: 1.1rem;
+}
+
+/* The button style is already global, but we can add margin if needed */
+.contact-section .btn {
+    padding: 1.2rem 2.5rem; /* Make the final button a bit bigger */
+}
