@@ -41,6 +41,26 @@
 
 @media (max-width: 768px) {
     .social-links-wrapper {
+        /* Unset all the fixed positioning */
+        position: relative;
+        left: auto;
+        bottom: auto;
+        width: 100%;
+        
+        padding: 2rem 0; /* Add some spacing */
+    }
+
+    .social-links-wrapper ul {
+        flex-direction: row; /* Make the list horizontal */
+        justify-content: center;
+    }
+
+    /* Hide the vertical line on mobile */
+    .social-links-wrapper ul::after {
         display: none;
+    }
+
+    .social-links-wrapper li {
+        padding: 0 15px; /* Add horizontal spacing between icons */
     }
 }

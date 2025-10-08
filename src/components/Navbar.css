@@ -46,9 +46,13 @@
 @media (max-width: 768px) {
     .navbar ul {
         justify-content: center;
+        flex-wrap: wrap; /* Allows items to wrap to the next line */
+        padding: 0 1rem;
     }
+
     .navbar ul li {
-        margin: 0 1rem;
+        margin: 0.5rem 0.75rem; /* Add vertical margin for wrapped items */
+        font-size: 0.8rem; /* Make font slightly smaller */
     }
 }
 

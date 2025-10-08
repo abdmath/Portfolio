@@ -12,7 +12,6 @@ function App() {
   return (
     <div>
       <Navbar />
-      <SocialLinks /> 
       <main>
         <Hero />
         <div className="content-wrapper">
@@ -23,6 +22,7 @@ function App() {
           <Contact />
         </div>
       </main>
+      <SocialLinks /> 
     </div>
   )
 }
